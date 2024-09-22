@@ -29,7 +29,7 @@
 <body class="font-lexend">
     <div class="sticky top-0">
         <nav class="bg-[#F9F7F3] py-3">
-            <div class="navbar bg-base-100 w-4/5 mx-auto bg-[#F9F7F3]">
+            <div class="navbar bg-base-100 md:w-4/5 mx-auto bg-[#F9F7F3]">
                 <div class="navbar-start">
                     <a class="btn btn-ghost text-xl bg-[#ABEF5F] px-5" href="faq.html">
                         Blog
@@ -37,15 +37,15 @@
                 </div>
                 <div class="navbar-center space-x-5">
                   <img src="assets/logo.png" alt="">
-                  <h1 class="text-xl font-bold">Donate Bangladesh</h1>
+                  <h1 class="text-xl font-bold hidden lg:block">Donate Bangladesh</h1>
                 </div>
-                <div class="navbar-end space-x-5">
+                <div class="navbar-end space-x-2">
                     <img src="assets/coin.png" alt="">
                     <h1 class="text-xl font-bold text-stone-500	"><span id="current-balance">5500</span> BDT</h1>
                 </div>
               </div>
         </nav>
-        <div class="flex justify-center space-x-5 backdrop-blur-sm p-10">
+        <div class="flex justify-center space-x-5 backdrop-blur-sm p-5 lg:p-10">
             <div id="donation-btn">
                 <a class="btn btn-ghost text-xl bg-[#ABEF5F] px-5">Donation</a>
             </div>
@@ -56,12 +56,12 @@
         </div>
     </div>
     <main class="w-4/5 mx-auto space-y-8 pb-20">
-        <section id="donation-section">
-            <section class="grid grid-cols-2 p-8 border-2 rounded-xl">
+        <section id="donation-section" class="space-y-8">
+            <section class="grid lg:grid-cols-2 p-8 border-2 rounded-xl space-y-4 lg:space-y-0">
                 <div>
                     <img src="assets/noakhali.png" alt="">
                 </div>
-                <div class="flex flex-col justify-between ">
+                <div class="flex flex-col justify-between space-y-4 lg:space-y-0">
                     <div class="flex items-center bg-stone-100 w-fit p-3 rounded-lg space-x-2">
                         <img src="assets/coin.png" alt="">
                         <p><span id="noakhali-balance">0</span> BDT</p>
@@ -86,11 +86,11 @@
         </dialog>
                 </div>
             </section>
-            <section class="grid grid-cols-2 p-8 border-2 rounded-xl">
+            <section class="grid lg:grid-cols-2 p-8 border-2 rounded-xl space-y-4 lg:space-y-0">
                 <div>
                     <img src="assets/feni.png" alt="">
                 </div>
-                <div class="flex flex-col justify-between ">
+                <div class="flex flex-col justify-between space-y-4 lg:space-y-0">
                     <div class="flex items-center bg-stone-100 w-fit p-3 rounded-lg space-x-2">
                         <img src="assets/coin.png" alt="">
                         <p><span id="feni-balance">0</span> BDT</p>
@@ -115,11 +115,11 @@
         </dialog>
                 </div>
             </section>
-            <section class="grid grid-cols-2 p-8 border-2 rounded-xl ">
+            <section class="grid lg:grid-cols-2 p-8 border-2 rounded-xl space-y-4 lg:space-y-0">
                 <div>
                     <img src="assets/quota-protest.png" alt="">
                 </div>
-                <div class="flex flex-col justify-between ">
+                <div class="flex flex-col justify-between space-y-4 lg:space-y-0">
                     <div class="flex items-center bg-stone-100 w-fit p-3 rounded-lg space-x-2">
                         <img src="assets/coin.png" alt="">
                         <p><span id="movement-balance">0</span> BDT</p>
@@ -149,6 +149,9 @@
 
         </section>
     </main>
+    <div class="bg-[#F9F7F3] py-10">
+
+    </div>
     <script src="js/donation.js"></script>
     <script src="js/donationHistoryButton.js"></script>
 </body>
