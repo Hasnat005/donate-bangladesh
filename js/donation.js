@@ -4,7 +4,7 @@ function validation(donatedMoney) {
     if (donatedMoney === "" || donatedMoney === null) return false;
     if (isNaN(donatedMoney)) return false;
     if (parseFloat(donatedMoney) <= 0) return false;
-    if (currentBalance < parseFloat(donatedMoney)) return false;
+    if (parseFloat(currentBalance) < parseFloat(donatedMoney)) return false;
     return true;
 }
 
