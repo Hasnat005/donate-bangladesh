@@ -3,11 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Donate Bangladesh</title>
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+     <!-- daisyUI cdn -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              fontFamily : {
+                'lexend': ['Lexend','sans-serif'],
+              }
+            }
+          }
+        }
+      </script> 
 </head>
-<body>
-    testing....
+<body class="font-lexend">
+    <div class="space-y-10">
+        <nav class="bg-[#F9F7F3]">
+            <div class="navbar bg-base-100 w-4/5 mx-auto bg-[#F9F7F3]">
+                <div class="navbar-start">
+                    <a class="btn btn-ghost text-xl bg-[#ABEF5F] px-5">Blog</a>
+                </div>
+                <div class="navbar-center space-x-5">
+                  <img src="assets/logo.png" alt="">
+                  <h1 class="text-xl font-bold">Donate Bangladesh</h1>
+                </div>
+                <div class="navbar-end space-x-5">
+                    <img src="assets/coin.png" alt="">
+                    <h1 class="text-xl font-bold text-gray-600	">5500 BDT</h1>
+                </div>
+              </div>
+        </nav>
+        <div class="flex justify-center space-x-5">
+            <a class="btn btn-ghost text-xl bg-[#ABEF5F] px-5">Donation</a>
+            <a class="btn btn-ghost text-xl px-5 border-stone-500">History</a>
+        </div>
+    </div>
+
 </body>
 </html>
