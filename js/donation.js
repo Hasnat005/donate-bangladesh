@@ -60,7 +60,7 @@ document.getElementById('donate-btn-feni')
         document.getElementById("input-feni").value = '';
     })
 
-    document.getElementById('donate-btn-movement')
+document.getElementById('donate-btn-movement')
     .addEventListener('click', function(){
         let donatedMoney = document.getElementById("input-movement").value;
         if(validation(donatedMoney) === false) {
